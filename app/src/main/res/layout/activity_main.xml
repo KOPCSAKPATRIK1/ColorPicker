@@ -4,30 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/layout">
 
     <com.google.android.material.slider.Slider
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/redSlider"
-        android:valueFrom="0"
-        android:valueTo="255"/>
+        android:valueFrom="0.0"
+        android:valueTo="255.0"
+        android:stepSize="1"/>
 
     <com.google.android.material.slider.Slider
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/redSlider"
         android:id="@+id/greenSlider"
-        android:valueFrom="0"
-        android:valueTo="255"/>
+        android:valueFrom="0.0"
+        android:valueTo="255.0"
+        android:stepSize="1"/>
 
     <com.google.android.material.slider.Slider
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/greenSlider"
         android:id="@+id/blueSlider"
-        android:valueFrom="0"
-        android:valueTo="255"/>
+        android:valueFrom="0.0"
+        android:valueTo="255.0"
+        android:stepSize="1"/>
+
+    <TextView
+        android:id="@+id/redTV"
+        android:layout_width="wrap_content"
+        android:layout_height="70sp"
+        android:layout_below="@+id/blueSlider"
+        android:text="Red: \n"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/greenTV"
+        android:layout_width="wrap_content"
+        android:layout_height="70sp"
+    android:layout_below="@+id/redTV"
+        android:text="Green: "
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/blueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="70sp"
+        android:layout_below="@+id/greenTV"
+        android:text="Blue: "
+        android:textSize="30sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_below="@+id/blueTV"
+        android:id="@+id/szinezettTV"
+        android:gravity="center"
+        android:text="(0, 0, 0,)"
+        android:textSize="30sp"
+        />
 
 
 </RelativeLayout>
