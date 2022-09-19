@@ -69,7 +69,6 @@
         android:layout_below="@+id/blueTV"
         android:id="@+id/szinezettTV"
         android:gravity="center"
-        android:text="(0, 0, 0,)"
         android:textSize="30sp" />
 
 
