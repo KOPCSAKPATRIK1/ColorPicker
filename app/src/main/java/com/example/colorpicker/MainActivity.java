@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         init();
-
+        szinezettTV.setBackgroundColor(Color.BLACK);
         seekBarRed.setMax(255);
         seekBarBlue.setMax(255);
         seekBarGreen.setMax(255);
